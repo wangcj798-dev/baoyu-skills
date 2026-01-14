@@ -94,6 +94,12 @@ Flat vector illustration with retro palette
 - **Colors**: Retro muted palette - dusty pink (#E8B4B8), sage green (#A8C686), mustard yellow (#E8B84A), off-white background (#F5F0E6)
 - **Best for**: Tutorials, explainers, product introductions, educational content
 
+### 9. `notion`
+Minimalist hand-drawn line art, intellectual
+- **Aesthetic**: Simple line doodles with hand-drawn wobble, geometric shapes, maximum whitespace, SaaS product feel
+- **Colors**: Black outlines (#1A1A1A), white background (#FFFFFF), 1-2 pastel accents (blue #A8D4F0, yellow #F9E79F)
+- **Best for**: Knowledge sharing, concept explanations, productivity content, SaaS presentations
+
 ## Audience Presets
 
 | Audience | Approach |
@@ -152,6 +158,7 @@ path/to/
 | Research, analysis, thought leadership | `editorial` |
 | Wellness, healing, cozy, self-care, lifestyle, comfort | `warm` |
 | Tutorial, explainer, how-to, beginner, product, guide | `retro-flat` |
+| Knowledge, concept, productivity, SaaS, notion, intellectual | `notion` |
 
 4. Extract key information:
    - Core narrative and key messages
@@ -387,6 +394,18 @@ Primary Text Color: Black #000000 (clean outlines)
 Primary Accent Color: Retro muted palette - Dusty pink #E8B4B8, Sage green #A8C686, Mustard yellow #E8B84A, Muted blue #7BA7BC
 Visual Elements: Clear black monoline outlines (uniform width), flat color fills with NO gradients, geometric simplified shapes, toy-like proportions, minimal shadows, vintage badge style, halftone dots optional
 Style Rules: MUST use clear black outlines on all elements, NO 3D effects, NO gradients, simple flat color blocks only
+```
+
+### notion
+```
+Design Aesthetic: Minimalist hand-drawn line art with intellectual SaaS product feel, Notion-style doodles
+Background Color: Pure white #FFFFFF, off-white #FAFAFA
+Primary Font: Clean hand-drawn lettering, simple sans-serif
+Secondary Font: Simple sans-serif labels
+Primary Text Color: Black #1A1A1A, dark gray #4A4A4A
+Primary Accent Color: Pastel blue #A8D4F0, Pastel yellow #F9E79F, Pastel pink #FADBD8
+Visual Elements: Simple line doodles with hand-drawn wobble effect, geometric shapes, stick figures, maximum whitespace, single-weight ink lines
+Style Rules: Single color lines (black/dark gray), 1-2 pastel accents only, NO complex gradients, NO heavy shadows, imperfect hand-drawn feel
 ```
 
 ## Notes

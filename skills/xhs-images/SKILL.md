@@ -83,6 +83,12 @@ Vibrant, energetic, eye-catching
 - **Elements**: Bold shapes, comic-style elements, dynamic compositions
 - **Best for**: Exciting announcements, fun facts, engaging tutorials
 
+### 9. `notion`
+Minimalist hand-drawn line art, intellectual
+- **Colors**: Black outlines, white background, 1-2 pastel accents
+- **Elements**: Simple line doodles, geometric shapes, hand-drawn wobble, maximum whitespace
+- **Best for**: Knowledge sharing, concept explanations, SaaS content, productivity tips
+
 ## Auto Style Selection
 
 When no `--style` is specified, analyze content to select:
@@ -97,6 +103,7 @@ When no `--style` is specified, analyze content to select:
 | Professional, business, elegant, simple | `minimal` |
 | Classic, vintage, old, traditional | `retro` |
 | Fun, exciting, wow, amazing | `pop` |
+| Knowledge, concept, productivity, SaaS, notion | `notion` |
 
 ## File Management
 
@@ -314,6 +321,15 @@ Background: White (#FFFFFF), light gray
 Accents: Neon pink, electric purple
 Elements: Bold shapes, speech bubbles, comic-style effects, starburst
 Typography: Dynamic, energetic hand lettering with outlines
+```
+
+### notion
+```
+Colors: Black (#1A1A1A), dark gray (#4A4A4A)
+Background: Pure white (#FFFFFF), off-white (#FAFAFA)
+Accents: Pastel blue (#A8D4F0), pastel yellow (#F9E79F), pastel pink (#FADBD8)
+Elements: Simple line doodles, hand-drawn wobble effect, geometric shapes, stick figures, maximum whitespace
+Typography: Clean hand-drawn lettering, simple sans-serif labels
 ```
 
 ## Content Breakdown Principles
