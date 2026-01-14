@@ -17,7 +17,8 @@
       "skills": [
         "./skills/gemini-web",
         "./skills/xhs-images",
-        "./skills/post-to-x"
+        "./skills/post-to-x",
+        "./skills/article-illustrator"
       ]
     }
   ]

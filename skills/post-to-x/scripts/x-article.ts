@@ -555,18 +555,13 @@ export async function publishArticle(options: ArticleOptions): Promise<void> {
 
         await sleep(300);
 
-        // Move cursor to end of placeholder selection (don't delete yet)
-        await cdp.send('Runtime.evaluate', {
-          expression: `(() => {
-            const sel = window.getSelection();
-            if (sel && sel.rangeCount > 0) {
-              sel.collapseToEnd();
-            }
-          })()`,
-        }, { sessionId });
-        await sleep(100);
+        // Delete placeholder by pressing Enter (placeholder is already selected)
+        console.log(`[x-article] Deleting placeholder with Enter...`);
+        await cdp.send('Input.dispatchKeyEvent', { type: 'keyDown', key: 'Enter', code: 'Enter', windowsVirtualKeyCode: 13 }, { sessionId });
+        await cdp.send('Input.dispatchKeyEvent', { type: 'keyUp', key: 'Enter', code: 'Enter', windowsVirtualKeyCode: 13 }, { sessionId });
+        await sleep(200);
 
-        // Paste image first (before deleting placeholder)
+        // Paste image
         console.log(`[x-article] Pasting image...`);
         if (sendRealPasteKeystroke()) {
           console.log(`[x-article] Image pasted: ${path.basename(img.localPath)}`);
@@ -574,51 +569,9 @@ export async function publishArticle(options: ArticleOptions): Promise<void> {
           console.warn(`[x-article] Failed to paste image`);
         }
 
-        // Wait for image to upload and display
-        console.log(`[x-article] Waiting for image to display...`);
+        // Wait for image to upload
+        console.log(`[x-article] Waiting for upload...`);
         await sleep(4000);
-
-        // Now delete the placeholder text
-        console.log(`[x-article] Deleting placeholder text...`);
-        const deleteResult = await cdp.send<{ result: { value: boolean } }>('Runtime.evaluate', {
-          expression: `(() => {
-            const editor = document.querySelector('.DraftEditor-editorContainer [data-contents="true"]');
-            if (!editor) return false;
-
-            const placeholder = ${JSON.stringify(img.placeholder)};
-
-            // Find placeholder text node
-            const walker = document.createTreeWalker(editor, NodeFilter.SHOW_TEXT, null, false);
-            let node;
-
-            while ((node = walker.nextNode())) {
-              const text = node.textContent || '';
-              const idx = text.indexOf(placeholder);
-              if (idx !== -1) {
-                // Select the placeholder
-                const range = document.createRange();
-                range.setStart(node, idx);
-                range.setEnd(node, idx + placeholder.length);
-                const sel = window.getSelection();
-                sel.removeAllRanges();
-                sel.addRange(range);
-                // Delete it
-                sel.deleteFromDocument();
-                return true;
-              }
-            }
-            return false;
-          })()`,
-          returnByValue: true,
-        }, { sessionId });
-
-        if (deleteResult.result.value) {
-          console.log(`[x-article] Placeholder deleted`);
-        } else {
-          console.warn(`[x-article] Placeholder not found or already deleted`);
-        }
-
-        await sleep(500);
       }
 
       console.log('[x-article] All images processed.');
