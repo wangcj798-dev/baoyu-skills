@@ -2,6 +2,14 @@
 
 [English](./CHANGELOG.md) | 中文
 
+## 0.10.0 - 2026-01-18
+
+### 新功能
+- `baoyu-slide-deck`：风格库从 10 个扩展至 15 个，新增 8 种风格——`dark-atmospheric`（暗黑氛围）、`editorial-infographic`（杂志信息图）、`fantasy-animation`（奇幻动画）、`intuition-machine`（技术简报）、`pixel-art`（像素艺术）、`scientific`（科学图解）、`vintage`（复古文献）、`watercolor`（水彩手绘）。
+
+### 破坏性变更
+- `baoyu-slide-deck`：移除 3 种风格（`playful`、`storytelling`、`warm`）；默认风格从 `notion` 改为 `blueprint`。
+
 ## 0.9.0 - 2026-01-17
 
 ### 新功能

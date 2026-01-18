@@ -153,16 +153,21 @@ Generate professional slide deck images from content. Creates comprehensive outl
 
 | Style | Description | Best For |
 |-------|-------------|----------|
-| `notion` (default) | SaaS dashboard aesthetic with clean data focus, card-based layouts | Product demos, SaaS, productivity tools, B2B |
-| `sketch-notes` | Hand-drawn feel with soft brush strokes, warm off-white background | Educational, tutorials, knowledge sharing |
-| `blueprint` | Technical schematics with grid texture, engineering precision | Architecture, system design, data analysis |
-| `bold-editorial` | High-impact magazine style, bold typography, dark backgrounds | Product launches, marketing, keynotes |
-| `vector-illustration` | Flat vector with black outlines, retro soft colors, toy model aesthetic | Creative proposals, children's content, explainers |
-| `minimal` | Ultra-clean with maximum whitespace, single accent color, zen-like | Executive briefings, keynotes, premium brands |
-| `storytelling` | Cinematic full-bleed visuals, emotional photography | Case studies, narratives, customer journeys |
-| `warm` | Soft gradients, rounded shapes, wellness palette | Lifestyle, wellness, personal development |
-| `corporate` | Navy/gold palette, structured layouts, professional iconography | Investor decks, client proposals, quarterly reports |
-| `playful` | Vibrant coral/teal/yellow, rounded shapes, dynamic layouts | Workshops, training, creative pitches |
+| `blueprint` (default) | Technical schematics, grid texture, engineering precision | Architecture, system design |
+| `notion` | SaaS dashboard aesthetic, card-based layouts, clean data focus | Product demos, SaaS, B2B |
+| `bold-editorial` | High-impact magazine style, bold typography, dark backgrounds | Product launches, keynotes |
+| `corporate` | Navy/gold palette, structured layouts, professional icons | Investor decks, proposals |
+| `dark-atmospheric` | Cinematic dark mode, glowing accents, atmospheric depth | Entertainment, gaming, creative |
+| `editorial-infographic` | Magazine-style explainers, flat illustrations | Tech explainers, research |
+| `fantasy-animation` | Whimsical Ghibli/Disney style, hand-drawn animation | Educational, storytelling |
+| `intuition-machine` | Technical briefing, bilingual labels, aged paper texture | Technical docs, bilingual |
+| `minimal` | Ultra-clean, maximum whitespace, single accent color | Executive briefings, premium |
+| `pixel-art` | Retro 8-bit aesthetic, chunky pixels, nostalgic gaming | Gaming, developer talks |
+| `scientific` | Academic diagrams, biological pathways, precise labeling | Biology, chemistry, medical |
+| `sketch-notes` | Hand-drawn feel, soft brush strokes, warm background | Educational, tutorials |
+| `vector-illustration` | Flat vector, black outlines, retro soft colors | Creative proposals, explainers |
+| `vintage` | Aged-paper aesthetic, historical document styling | Historical, heritage, biography |
+| `watercolor` | Soft hand-painted textures, natural warmth | Lifestyle, wellness, travel |
 
 After generation, slides are automatically merged into a `.pptx` file for easy sharing.
 

@@ -48,16 +48,21 @@ Transform content into professional slide deck images with flexible style option
 
 | Style | Description | Best For |
 |-------|-------------|----------|
-| `sketch-notes` | Hand-drawn, warm & friendly | Educational, tutorials |
-| `blueprint` | Technical, precise & analytical | Architecture, system design |
-| `bold-editorial` | Magazine, high-impact & dynamic | Product launches, keynotes |
-| `vector-illustration` | Flat vector, retro & cute | Creative, children's content |
+| `blueprint` (Default) | Technical schematics, grid texture | Architecture, system design |
+| `notion` | SaaS dashboard, card-based layouts | Product demos, SaaS, B2B |
+| `bold-editorial` | Magazine cover, bold typography, dark | Product launches, keynotes |
+| `corporate` | Navy/gold, structured layouts | Investor decks, proposals |
+| `dark-atmospheric` | Cinematic dark mode, glowing accents | Entertainment, gaming |
+| `editorial-infographic` | Magazine explainers, flat illustrations | Tech explainers, research |
+| `fantasy-animation` | Ghibli/Disney style, hand-drawn | Educational, storytelling |
+| `intuition-machine` | Technical briefing, bilingual labels | Technical docs, academic |
 | `minimal` | Ultra-clean, maximum whitespace | Executive briefings, premium |
-| `storytelling` | Cinematic, full-bleed visuals | Narratives, case studies |
-| `warm` | Soft gradients, wellness aesthetic | Lifestyle, personal development |
-| `notion` (Default) | SaaS dashboard, clean data focus | Product demos, productivity |
-| `corporate` | Navy/gold, professional | Investor decks, proposals |
-| `playful` | Vibrant, dynamic shapes | Workshops, training |
+| `pixel-art` | Retro 8-bit, chunky pixels | Gaming, developer talks |
+| `scientific` | Academic diagrams, precise labeling | Biology, chemistry, medical |
+| `sketch-notes` | Hand-drawn, warm & friendly | Educational, tutorials |
+| `vector-illustration` | Flat vector, retro & cute | Creative, children's content |
+| `vintage` | Aged-paper, historical styling | Historical, heritage, biography |
+| `watercolor` | Hand-painted textures, natural warmth | Lifestyle, wellness, travel |
 
 ## Auto Style Selection
 
@@ -65,15 +70,20 @@ Transform content into professional slide deck images with flexible style option
 |-----------------|----------------|
 | tutorial, learn, education, guide, intro, beginner | `sketch-notes` |
 | architecture, system, data, analysis, technical | `blueprint` |
-| launch, marketing, brand, keynote, impact | `bold-editorial` |
 | creative, children, kids, cute, illustration | `vector-illustration` |
+| briefing, academic, research, bilingual, infographic, concept | `intuition-machine` |
 | executive, minimal, clean, simple, elegant | `minimal` |
-| story, journey, case study, narrative, emotional | `storytelling` |
-| wellness, lifestyle, personal, growth, mindfulness | `warm` |
 | saas, product, dashboard, metrics, productivity | `notion` |
 | investor, quarterly, business, corporate, proposal | `corporate` |
-| workshop, training, fun, playful, energetic | `playful` |
-| Default | `notion` |
+| launch, marketing, keynote, bold, impact, magazine | `bold-editorial` |
+| entertainment, music, gaming, creative, atmospheric | `dark-atmospheric` |
+| explainer, journalism, science communication | `editorial-infographic` |
+| story, fantasy, animation, magical, whimsical | `fantasy-animation` |
+| gaming, retro, pixel, developer, nostalgia | `pixel-art` |
+| biology, chemistry, medical, pathway, scientific | `scientific` |
+| history, heritage, vintage, expedition, historical | `vintage` |
+| lifestyle, wellness, travel, artistic, natural | `watercolor` |
+| Default | `blueprint` |
 
 ## Design Philosophy
 
