@@ -2,6 +2,23 @@
 
 English | [中文](./CHANGELOG.zh.md)
 
+## 1.0.1 - 2026-01-18
+
+### Refactor
+- Code structure improvements for better readability and maintainability.
+- `baoyu-slide-deck`: unified style reference file formats.
+
+### Other
+- Screenshots: converted from PNG to WebP format for smaller file sizes; added screenshots for new styles.
+
+## 1.0.0 - 2026-01-18
+
+### Features
+- `baoyu-danger-x-to-markdown`: new skill to convert X/Twitter posts and threads to Markdown format.
+
+### Breaking Changes
+- `baoyu-gemini-web` renamed to `baoyu-danger-gemini-web` to indicate potential risks of using reverse-engineered APIs.
+
 ## 0.11.0 - 2026-01-18
 
 ### Features

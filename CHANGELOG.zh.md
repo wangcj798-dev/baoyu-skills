@@ -2,6 +2,23 @@
 
 [English](./CHANGELOG.md) | 中文
 
+## 1.0.1 - 2026-01-18
+
+### 重构
+- 代码结构优化，提升可读性和可维护性。
+- `baoyu-slide-deck`：统一风格参考文件格式。
+
+### 其他
+- 截图：从 PNG 转换为 WebP 格式，减小文件体积；新增新风格的截图。
+
+## 1.0.0 - 2026-01-18
+
+### 新功能
+- `baoyu-danger-x-to-markdown`：新增技能，将 X/Twitter 帖子和线程转换为 Markdown 格式。
+
+### 破坏性变更
+- `baoyu-gemini-web` 重命名为 `baoyu-danger-gemini-web`，以提示使用逆向工程 API 的潜在风险。
+
 ## 0.11.0 - 2026-01-18
 
 ### 新功能
