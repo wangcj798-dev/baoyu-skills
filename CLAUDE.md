@@ -231,6 +231,61 @@ Image filenames MUST include meaningful slugs for readability:
 - Handle failures gracefully with retry logic
 - Provide clear progress feedback to user
 
+## Style Maintenance (baoyu-comic)
+
+When adding, updating, or deleting styles for `baoyu-comic`, follow this workflow:
+
+### Adding a New Style
+
+1. **Create style definition**: `skills/baoyu-comic/references/styles/<style-name>.md`
+2. **Update SKILL.md**:
+   - Add style to `--style` options table
+   - Add auto-selection entry if applicable
+3. **Generate showcase image**:
+   ```bash
+   npx -y bun skills/baoyu-danger-gemini-web/scripts/main.ts \
+     --prompt "A single comic book page in <style-name> style showing [appropriate scene]. Features: [style characteristics from style definition]. 3:4 portrait aspect ratio comic page." \
+     --image screenshots/comic-styles/<style-name>.png
+   ```
+4. **Compress to WebP**:
+   ```bash
+   npx -y bun skills/baoyu-compress-image/scripts/main.ts screenshots/comic-styles/<style-name>.png
+   ```
+5. **Update both READMEs** (`README.md` and `README.zh.md`):
+   - Add style to `--style` options
+   - Add row to style description table
+   - Add image to style preview grid
+
+### Updating an Existing Style
+
+1. **Update style definition**: `skills/baoyu-comic/references/styles/<style-name>.md`
+2. **Regenerate showcase image** (if visual characteristics changed):
+   - Follow steps 3-4 from "Adding a New Style"
+3. **Update READMEs** if description changed
+
+### Deleting a Style
+
+1. **Delete style definition**: `skills/baoyu-comic/references/styles/<style-name>.md`
+2. **Delete showcase image**: `screenshots/comic-styles/<style-name>.webp`
+3. **Update SKILL.md**:
+   - Remove from `--style` options
+   - Remove auto-selection entry
+4. **Update both READMEs**:
+   - Remove from `--style` options
+   - Remove from style description table
+   - Remove from style preview grid
+
+### Style Preview Grid Format
+
+READMEs use 3-column tables for style previews:
+
+```markdown
+| | | |
+|:---:|:---:|:---:|
+| ![style1](./screenshots/comic-styles/style1.webp) | ![style2](./screenshots/comic-styles/style2.webp) | ![style3](./screenshots/comic-styles/style3.webp) |
+| style1 | style2 | style3 |
+```
+
 ## Extension Support
 
 Every SKILL.md MUST include an Extension Support section at the end:

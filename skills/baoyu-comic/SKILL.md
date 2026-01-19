@@ -18,7 +18,7 @@ Create original knowledge comics with multiple visual styles.
 
 | Option | Values |
 |--------|--------|
-| `--style` | classic (default), dramatic, warm, sepia, vibrant, ohmsha, realistic, wuxia, or custom description |
+| `--style` | classic (default), dramatic, warm, sepia, vibrant, ohmsha, realistic, wuxia, shoujo, or custom description |
 | `--layout` | standard (default), cinematic, dense, splash, mixed, webtoon |
 | `--aspect` | 3:4 (default, portrait), 4:3 (landscape), 16:9 (widescreen) |
 | `--lang` | auto (default), zh, en, ja, etc. |
@@ -38,6 +38,7 @@ Style × Layout × Aspect can be freely combined. Custom styles can be described
 | Conflict, breakthrough | dramatic | splash |
 | Wine, food, business, lifestyle, professional | realistic | cinematic |
 | Martial arts, wuxia, xianxia, Chinese historical | wuxia | splash |
+| Romance, love, school life, friendship, emotional | shoujo | standard |
 | Biography, balanced | classic | mixed |
 
 ## Script Directory
