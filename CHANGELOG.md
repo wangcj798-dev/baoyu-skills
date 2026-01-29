@@ -2,6 +2,11 @@
 
 English | [中文](./CHANGELOG.zh.md)
 
+## 1.25.2 - 2026-01-28
+
+### Documentation
+- `baoyu-post-to-wechat`: add WeChat API credentials configuration guide to README.
+
 ## 1.25.1 - 2026-01-28
 
 ### Features

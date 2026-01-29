@@ -2,6 +2,11 @@
 
 [English](./CHANGELOG.md) | 中文
 
+## 1.25.2 - 2026-01-28
+
+### 文档
+- `baoyu-post-to-wechat`：README 新增微信公众号 API 凭证配置说明。
+
 ## 1.25.1 - 2026-01-28
 
 ### 新功能
